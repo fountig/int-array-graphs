@@ -14,10 +14,11 @@ Example:
 
 ## Print adjancency matrix
 
-```g1.printAdjMatrix();```
+```g1.printAdjMatrix();
 
   abcd
 a 0000
 b 0000
 c 0000
 d 0000
+```
