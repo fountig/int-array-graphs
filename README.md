@@ -8,6 +8,7 @@ You can create a graph with a maximum of 26 vertices, which are labeled automati
 Example:
 
 ##Create a graph with 4 vertices. 
+
 ```Graph g1 = new Graph(4);```
 
 
