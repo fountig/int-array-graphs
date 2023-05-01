@@ -70,7 +70,7 @@ public class Graph {
         int x = v1 - 97;
         int y = v2 - 97;
         this.adjMatrix[x][y] += 1; 
-         // Only count reverse edges if vertexes are different. 
+         // Update this only if it's not a loop.
         if (v1 != v2)
             this.adjMatrix[y][x] += 1;
         
@@ -82,7 +82,7 @@ public class Graph {
         if (this.adjMatrix[x][y] != 0 && this.adjMatrix[y][x] !=0) {
             
             this.adjMatrix[x][y] -= 1; 
-            // Only count reverse edges if vertexes are different. 
+            // Update this only if it's not a loop.
             if (v1 != v2) 
                 this.adjMatrix[y][x] -= 1;
             
