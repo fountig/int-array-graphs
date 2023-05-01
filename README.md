@@ -6,7 +6,7 @@ In short, the operations act on a two-dimensional int array, which serves as the
 You can create a graph with a maximum of 26 vertices, which are labeled automatically from a to z.
 It's simple, fast, and you can easily use pencil and paper with it, to do algorithmic experiments.
 
-Examples:
+Usage:
 
 ## Create a graph with 4 vertices. 
 
