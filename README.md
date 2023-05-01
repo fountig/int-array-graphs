@@ -14,7 +14,7 @@ Example:
 
 ## Print adjancency matrix
 
-```g1.printAdjMatrix();
+``` g1.printAdjMatrix();
 
   abcd
 a 0000
