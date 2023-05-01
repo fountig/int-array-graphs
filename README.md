@@ -14,11 +14,23 @@ Example:
 
 ## Print adjancency matrix
 
-``` g1.printAdjMatrix();
+``` g1.printAdjMatrix();```
 
-  abcd
-a 0000
-b 0000
-c 0000
-d 0000
-```
+## Add an edge
+
+```g1.addE('a','b');```
+
+## Delete an edge
+
+```g1.delE('a','b');```
+
+## Test for edge existence
+
+```g1.existsE('a','b');```
+
+## Get vertex degree
+
+```g1.degV('a');```
+
+
+ 
