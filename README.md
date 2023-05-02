@@ -10,30 +10,30 @@ and try algorithmic experiments.
 
 Usage:
 
-## Create a graph with 4 vertices. 
+## Create a graph with 4 vertices (constructor)
 
-```Graph g1 = new Graph(4);```
+```Graph g1 = new Graph(int numberOfVertexes);```
 
-## Print adjancency matrix
+## Print adjancency matrix (void)
 
 ``` g1.printAdjMatrix();```
 
-## Add an edge
+## Add an edge (void)
 
-```g1.addE('a','b');```
+```g1.addE(char v1, char v2);```
 
-## Delete an edge
+## Delete an edge (void)
 
-```g1.delE('a','b');```
+```g1.delE(char v1,char v2);```
 
-## Test for edge existence
+## Test for edge existence (boolean)
 
-```g1.existsE('a','b');```
+```g1.existsE(char v1,char v2);```
 
-## Get vertex degree
+## Get vertex degree (int)
 
-```g1.degV('a');```
+```g1.degV(char v1);```
 
-## Get edges
+## Get edges (char[])
 
-```g1.getE('a');```
+```g1.getE(char v1);```
