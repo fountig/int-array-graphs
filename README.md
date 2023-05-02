@@ -32,5 +32,6 @@ Usage:
 
 ```g1.degV('a');```
 
+## Get edges
 
- 
+```g1.getE('a');```
