@@ -70,19 +70,19 @@ public class Graph {
         int x = v1 - 97;
         int y = v2 - 97;
         this.adjMatrix[x][y] += 1; 
-         // Update this only if it's not a loop.
+         // Update this only if it's not a loop. 
         if (v1 != v2)
             this.adjMatrix[y][x] += 1;
         
         
     }
-    public void deleteE(char v1, char v2) {
+    public void delE(char v1, char v2) {
         int x = v1 - 97;
         int y = v2 - 97;
         if (this.adjMatrix[x][y] != 0 && this.adjMatrix[y][x] !=0) {
             
             this.adjMatrix[x][y] -= 1; 
-            // Update this only if it's not a loop.
+            // Update this only if it's not a loop. 
             if (v1 != v2) 
                 this.adjMatrix[y][x] -= 1;
             
@@ -99,7 +99,7 @@ public class Graph {
         
     }
     
-    public int degreeV(char v1) {
+    public int degV(char v1) {
         int x = v1 - 97;
         int degrees = 0;
         for (int i=0; i < this.adjMatrix.length ; i++) {
@@ -108,4 +108,31 @@ public class Graph {
         return degrees;
     }
     
+    public char[] getE(char v1) {
+       
+        int row = v1 - 97; // if 'a' then row=0, if 'b' then row=1, etc.
+        int degrees = this.degV(v1);
+        char edges[] = new char[degrees];
+        int index = -1;
+        
+            for (int col=0; col < this.adjMatrix.length; col++) { // get all elements of row.
+     
+                if (this.adjMatrix[row][col] >0) { // if element is > 0, then there's an edge between v1 and the vertex row label (a=0, b=1, etc).
+                    
+                    int edges_howmany = this.adjMatrix[row][col];
+                    for (int e=0; e < edges_howmany; e++) { // loop 
+                        index++;
+                        int to_vertex = col + 97;
+                        edges[index] = (char) to_vertex;    
+                    }
+                    
+                }
+                    
+            }
+            
+            return edges;
+    }
+           
+    
 }
+
