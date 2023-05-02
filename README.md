@@ -1,5 +1,4 @@
-# java-primitive-graphs
-Undirected Graphs implemented in Java primitives. 
+# Undirected Graphs implemented in Java primitives. 
 
 I'm not using any proper OO design here, nor Vectors or ArrayLists, just good plain 'ole int arrays.
 In short, the graph methods manipulate a two-dimensional int array, which serves as the graph's adjucency matrix.
