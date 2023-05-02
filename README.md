@@ -1,5 +1,5 @@
 # java-primitive-graphs
-Simple Graphs implemented in Java primitives. 
+Undirected Graphs implemented in Java primitives. 
 
 I'm not using any proper OO design here, nor Vectors or ArrayLists, just good plain 'ole int arrays.
 In short, the graph methods manipulate a two-dimensional int array, which serves as the graph's adjucency matrix.
@@ -7,6 +7,7 @@ You can create a graph with a maximum of 26 vertices, which are labeled automati
 This should be enough to make draw graphs using pen and paper, represent those graphs using the graph methods provided,
 and try algorithmic experiments. 
 
+You can have more than one edge between two vertices and vertices connected to themselves (loops).
 
 Usage:
 
