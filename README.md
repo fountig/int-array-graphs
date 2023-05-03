@@ -9,7 +9,7 @@ You can have more than one edge between two vertices and vertices connected to t
 
 Usage:
 
-## Create a graph with 4 vertices (constructor)
+## Create a graph with N vertices (constructor)
 
 ```Graph g1 = new Graph(int numberOfVertexes);```
 
